@@ -31,6 +31,7 @@ run locally:
 ```
 uv pip install -e demo/apps/project1
 uv run python -m project1.main
+```
 
 ```
 uv pip install -e demo/apps/project2
