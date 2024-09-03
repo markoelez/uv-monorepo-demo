@@ -29,7 +29,11 @@
 
 run locally:
 ```
+uv pip install -e demo/apps/project1
 uv run python -m project1.main
+
+```
+uv pip install -e demo/apps/project2
 uv run python -m project2.main
 ```
 
@@ -41,3 +45,5 @@ uv run python build.py
 ### open questions
 - enforce a single global version of python?
 - enforce a single global version of ALL dependencies? (I don't think uv will do this automatically since each project has its own lockfile, need to confirm)
+- can we improve how libraries are handled?
+    - currently, we generate (implicitely versioned) wheels for libraries in a temporary directory and use that in the pex install
