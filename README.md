@@ -22,8 +22,8 @@
     - take a target project as input
     - parse local dependencies from the `pyproject.toml` file
     - compile local shared library dependencies as standalone wheels
-    - copy local dependencies packaged as wheels into docker image, download external dependencies
-    - compile as executable `pex` binary
+    - install local dependencies packaged as wheels, download external dependencies
+    - compile as executable `pex` binary (this would happen in docker)
 
 #### open questions
 - enforce a single global version of python?
