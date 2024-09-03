@@ -1,13 +1,13 @@
 # uv-monorepo-demo
 
-## goals
+### goals
 - allow for quick iteration on future projects
     - make it easy to share code between services
     - changes to services/libraries in monorepo should be easy to test
 - simple build tooling
 - simple dependency management/resolution
 
-## structure
+### proposed structure
 - two types of projects:
     - library: a project designed to consolidate shared logic
         - libraries can consume other libraries
@@ -25,6 +25,6 @@
     - copy local dependencies packaged as wheels into docker image, download external dependencies
     - compile as executable `pex` binary
 
-## open questions
+#### open questions
 - enforce a single global version of python?
 - enforce a single global version of ALL dependencies? (I don't think uv will do this automatically since each project has its own lockfile, need to confirm)
