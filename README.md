@@ -1,5 +1,11 @@
 # uv-monorepo-demo
 
+### goals
+- allow for quick iteration on future projects
+    - make it easy to share code between services
+- simple build tooling
+- simple dependency management/resolution
+
 ### notes
 - two types of projects:
     - library: a project designed to consolidate shared logic
