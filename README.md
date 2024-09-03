@@ -3,6 +3,7 @@
 ### goals
 - allow for quick iteration on future projects
     - make it easy to share code between services
+    - changes to services/libraries in monorepo should be easy to test
 - simple build tooling
 - simple dependency management/resolution
 
