@@ -25,6 +25,19 @@
     - install local dependencies packaged as wheels, download external dependencies
     - compile as executable `pex` binary (this would happen in docker)
 
-#### open questions
+### dev flow
+
+run locally:
+```
+uv run python -m project1.main
+uv run python -m project2.main
+```
+
+build pex (hardcoded to build project1):
+```
+uv run python build.py
+```
+
+### open questions
 - enforce a single global version of python?
 - enforce a single global version of ALL dependencies? (I don't think uv will do this automatically since each project has its own lockfile, need to confirm)
