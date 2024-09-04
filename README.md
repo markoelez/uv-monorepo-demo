@@ -20,10 +20,11 @@
 - services and libraries specify dependencies in their `pyproject.toml` files
 - `build.py` will:
     - take a target project as input
-    - parse local dependencies from the `pyproject.toml` file
+    - generate a `requirements.txt` file using requirements specified in `pyproject.toml`
+    - extract local shared library dependencies
     - compile local shared library dependencies as standalone wheels
-    - install local dependencies packaged as wheels, download external dependencies
-    - compile as executable `pex` binary (this would happen in docker)
+    - compile executable `pex` binary using local wheels for local deps (this will happen in docker)
+    - note: eventually we will publish docker images and run on kubernetes which will allow us to delete this entirely
 
 ### dev flow
 
